@@ -1,10 +1,14 @@
-def diamondUp(n):
-    for x in range(1, n):
-        print(" "*(n-x), ' *'*x)
+# def diamondUp(n):
+#     for x in range(1, n):
+#         print(" "*(n-x), ' *'*x)
 
-def diamondDown(n):
-    for x in range(1, n):
-        print(" "*(x+1), ' *'*((n-x)-1))
+# def diamondDown(n):
+#     for x in range(1, n):
+#         print(" "*(x+1), ' *'*((n-x)-1))
 
-diamondUp(9)
-diamondDown(9)
+# diamondUp(9)
+# diamondDown(9)
+
+print("The name of the student is " + "name" + ". She is " + "age"
++ " years old. " + "She is " + "height" + " cms tall. " +
+"Student: " + "is_student")

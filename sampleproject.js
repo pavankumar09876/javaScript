@@ -10,6 +10,9 @@ function change(){
     document.body.style.backgroundColor= randomColor
     document.getElementById("colorName").innerText = "Current Color: " + randomColor;
 }
+function robo(){
+    alert("We are robos")
+}
 
 function greet(){
     let name =document.getElementById("name").value;

@@ -63,14 +63,13 @@ let a = 'I learned JavaScripts';
 
 // let now = new Date();
 
-// console.log(now.toDateString()); 
-// console.log(now.getFullYear());  
-// console.log(now.getMonth());     
-// console.log(now.getHours());     
+// console.log(now.toDateString());
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getHours());
 
-
-let p=["a","b","c",11,22,33,44]
-let c=["A","B","C"]
+let p = ['a', 'b', 'c', 11, 22, 33, 44];
+let c = ['A', 'B', 'C'];
 // let poplast = p.pop()
 // document.writeln(p+"<br>")
 // document.writeln(poplast)
@@ -103,13 +102,13 @@ let c=["A","B","C"]
 // }
 // document.writeln(p)
 
-let score = [10,20,30,40,50]
-let studentName = ["PAvan","Aakhil","Munna","Bhaskra","Srinu"]
+let score = [10, 20, 30, 40, 50];
+let studentName = ['PAvan', 'Aakhil', 'Munna', 'Bhaskra', 'Srinu'];
 
-// studentName.forEach(function(item,index) {
-//     // document.writeln(item+"<br>")
-//     document.write(index +"."+ item+"<br>")
-// });
+studentName.forEach(function (item, index) {
+  // document.writeln(item+"<br>")
+  document.write(index + '.' + item + '<br>');
+});
 
 // score.forEach(function(score){
 //     let scorecard = score*2
@@ -118,16 +117,10 @@ let studentName = ["PAvan","Aakhil","Munna","Bhaskra","Srinu"]
 //     }
 // })
 
-let marks = [
+let line = 'this is simple test line';
+document.write(line.charAt(10));
+// document.writeln(line.split('*'));
 
-    ["Anil", "amar", "anthony"],
-    ["Banit", "bably", 'bhanu' ]
-
-    [10, 20, 30],
-    [40, 50, 60, 70],
-    [80, 90],
-    [100, 110, 120, 140, 150, 160, 170, 180]
-
-    ]
-
-document.write("My expected result : ", marks[0][0][1])
+// let removeSpace = "   pavan   "
+// document.write(removeSpace.trim())
+// console.log(removeSpace.trim())
