@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .one{
+      background-color: aqua;
+    }
+  </style>
   <body>
     <h1>Pavan</h1>
     <!-- <button onclick="startTimer()">Start</button>
@@ -31,6 +36,7 @@
   <button onclick="startCounter()">Start </button>
   <button onclick="stopCounter()">Stop</button> -->
   <div id="first" class="second">
+    <img src="C:\Users\91630\OneDrive\Documents\application1\ca.webp" id="img1" alt="Captain America" >
     <h1>
       This is a pavan
     </h1>
@@ -38,12 +44,24 @@
       this is a chanti
     </h2>
     <h2>
-      this is a chanti
+      this is a chanti1
     </h2>
-    <h2>
-      this is a chanti
+    <h2 id="last">
+      this is a chanti2
     </h2>
+    Name: <input type="text" id="fn">
   </div>
-    <script src="dom.js"></script>
+    <script >
+      var x=document.getElementById("img1")
+      x.style.width="100px"
+      x.style.height="100px"
+      console.log(x.getAttribute('src'))
+      console.log(x.getAttribute("value"))
+      x.setAttribute("value","Pavan")
+      console.log(x.getAttribute("value"))
+
+      
+
+    </script>
   </body>
 </html>
