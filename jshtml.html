@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .one {
+      background-color: aqua;
+    }
+  </style>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
-<style>
-  .one {
-    background-color: aqua;
-  }
-</style>
-
-<body>
-  <h1>Pavan</h1>
-  <!-- <button onclick="startTimer()">Start</button>
+  <body>
+    <h1>Pavan</h1>
+    <!-- <button onclick="startTimer()">Start</button>
     <button onclick="stopTimer()">Stop</button>
     <p id="msg"></p> -->
 
-  <!-- <h1>Calculator</h1>
+    <!-- <h1>Calculator</h1>
   <input type="number" id="num1" placeholder="Enter number">
   <input type="number" id="num2" placeholder="Enter number">
   <button onclick="add()"> Add</button>
   <p id="result"></p> -->
 
-  <!-- <h1>🎨 Click to change background color</h1>
+    <!-- <h1>🎨 Click to change background color</h1>
     <button onclick="change()" ondblclick="robo()">Change Color</button>
     <p id="colorName">Currenr Color:White</p> -->
 
-  <!-- <h1>Greeting Function</h1> -->
-  <!-- <input type="text" id="name" placeholder="Enter you name"> -->
-  <!-- <button onclick="greet()">Click Me</button>
+    <!-- <h1>Greeting Function</h1> -->
+    <!-- <input type="text" id="name" placeholder="Enter you name"> -->
+    <!-- <button onclick="greet()">Click Me</button>
   <p id="output"></p> -->
 
-  <!-- <h1>Auto Counter</h1>
+    <!-- <h1>Auto Counter</h1>
   <p id="counter">0</p>
   <button onclick="startCounter()">Start </button>
   <button onclick="stopCounter()">Stop</button> -->
-  <!-- <div id="first" class="second">
+    <!-- <div id="first" class="second">
     <img src="C:\Users\91630\OneDrive\Documents\application1\ca.webp" id="img1" alt="Captain America" >
     <h1>
       This is a pavan
@@ -53,31 +52,37 @@
     </h2>
     Name: <input type="text" id="fn">
   </div> -->
-  <!-- Name: <input type="text" name="" id="one">
-  <button type="submit" id="btn" onclick="Change()">ClickME</button>
+    <!-- Name: <input id="fullnxame" type="text" />
+    <button type="submit" id="btn">ClickME</button> -->
 
-  <div id="box" style="width:150px;height:150px;background:#ccc;"></div> -->
+    <!-- <div
+      id="box1"
+      style="width: 150px; height: 150px; background: #34c149"
+    ></div>
+    <div
+      id="box2"
+      style="width: 150px; height: 150px; background: #ccc; margin-top: 10px"
+    ></div> -->
 
-  <div id="box"></div>
+    <input type="text" id="fullname">
 
-<style>
-  #box {
-    width: 200px;
-    height: 200px;
-    background: lightgray;
-    margin: 40px;
-    border-radius: 10px;
-    transition: 0.2s;
+<script>
+  let fn = document.getElementById("fullname");
+
+  fn.addEventListener("keyup", change);
+
+  function change(evnt) {
+    console.log(evnt);
+    console.log("Function executed");
+
+    if (evnt.key === "a") {
+      alert('a not allowed');
+      fn.style.backgroundColor = 'pink';
+    } else {
+      fn.style.backgroundColor = 'blue';
+    }
   }
-</style>
+</script>
 
-<script src="script.js"></script>
-
-  <script src="dom.js">
-
-
-
-  </script>
-</body>
-
+  </body>
 </html>

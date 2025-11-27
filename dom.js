@@ -13,7 +13,6 @@
 // let d=document.querySelectorAll("h2")
 // console.log(d)
 
-
 //// Dom properties to selet html elements
 // console.log(document)
 // console.log(document.title)
@@ -38,7 +37,7 @@
 // }
 
 // let box=document.getElementById("box")
-// box.addEventListener("dblclick",()=>{
+// box.addEventListener("click",()=>{
 //     console.log("Click:Element clicked")
 // })
 //////////////////////////
@@ -55,7 +54,7 @@
 // })
 ////////////////////////////
 // box.addEventListener("mousemove",e=>{
-//     console.log("mousemove:",e.clientX,e.clientY)   
+//     console.log("mousemove:",e.clientX,e.clientY)
 // })
 ////////////////////////////
 // box.addEventListener("mouseenter",()=>{
@@ -65,35 +64,37 @@
 //   console.log("mouseleave: pointer left element");
 // });
 
-const box = document.getElementById("box");
+// const box = document.getElementById("box");
 
-// Click → toggle color
-box.addEventListener("click", () => {
-  box.style.background = box.style.background === "orange" ? "lightgray" : "orange";
-});
+// // Click → toggle color
+// box.addEventListener("click", () => {
+//   box.style.background = box.style.background === "orange" ? "lightgray" : "orange";
+// });
 
-// Double-click → make bigger
-box.addEventListener("dblclick", () => {
-  box.style.transform = "scale(1.2)";
-});
+// // Double-click → make bigger
+// box.addEventListener("dblclick", () => {
+//   box.style.transform = "scale(1.2)";
+// });
 
-// Right-click → shrink back to normal
-box.addEventListener("contextmenu", e => {
-  e.preventDefault();
-  box.style.transform = "scale(1)";
-});
+// // Right-click → shrink back to normal
+// box.addEventListener("contextmenu", e => {
+//   e.preventDefault();
+//   box.style.transform = "scale(1)";
+// });
 
-// Mouse enters → highlight
-box.addEventListener("mouseenter", () => {
-  box.style.boxShadow = "0 0 15px black";
-});
+// // Mouse enters → highlight
+// box.addEventListener("mouseenter", () => {
+//   box.style.boxShadow = "0 0 15px black";
+// });
 
-// Mouse leaves → remove highlight
-box.addEventListener("mouseleave", () => {
-  box.style.boxShadow = "none";
-});
+// // Mouse leaves → remove highlight
+// box.addEventListener("mouseleave", () => {
+//   box.style.boxShadow = "none";
+// });
 
-// Mouse moves → show coordinates in console
-box.addEventListener("mousemove", e => {
-  console.log("Coords:", e.clientX, e.clientY);
-});
+// // Mouse moves → show coordinates in console
+// box.addEventListener("mousemove", e => {
+//   console.log("Coords:", e.clientX, e.clientY);
+// });
+
+
